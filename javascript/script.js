@@ -32,23 +32,18 @@ console.log(engInput);
 
 //Morse Output area
 const morseOutput = document.querySelector("#morseTranslation");
-console.log(morseOutput);
+console.log(morseOutput.value);
 // Fix above line
 
 // Submit button
 const submitBtn = document.querySelector("#submitBtn");
 console.log(submitBtn);
 
-const createElement = (elementType, text, parent) => {
-  const newElement = document.createElement(elementType);
+// submitBtn.addEventListener("click", () => {
+//   engInput.value = "translated";
+//   console.log(morseOutput.value);
+// });
 
-  const textNode = document.createTextNode(text);
-
-  newElement.appendChild(textNode);
-
-  parent.appendChild(newElement);
-};
-
-submitBtn.addEventListener("click", () => {
-  createElement("p", engInput.value, morseOutput);
+morseOutput.addEventListener("input", () => {
+  engInput.value = morseOutput.value;
 });
