@@ -21,11 +21,11 @@ main {
   align-items: center;
 }
 
-h1 {
+header {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  font-size: 50px;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
 }
 
 h2 {
@@ -54,21 +54,4 @@ section {
 .textBox::placeholder {
   color: rgba(255, 255, 255, 0.621);
   text-align: center;
-}
-
-#submitBtn {
-  height: 50px;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  border-radius: 12px;
-  font-size: 30px;
-  background-color: rgba(49, 37, 89, 0.368627451);
-  color: whitesmoke;
-}
-#submitBtn:hover {
-  background-color: #6d7e8c;
-  color: whitesmoke;
 }
