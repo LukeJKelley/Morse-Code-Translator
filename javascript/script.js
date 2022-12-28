@@ -13,3 +13,7 @@ console.log(submitBtn);
 engInput.addEventListener("input", () => {
   morseOutput.value = convertToMorse(engInput.value);
 });
+
+
+//Validating my string if its morse code
+// Add functionality of morse to english
