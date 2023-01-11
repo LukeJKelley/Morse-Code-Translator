@@ -1,4 +1,4 @@
-import { convertToMorse } from "./modules.js";
+import { convertToMorse, convertToEnglish } from "./morseUtils.js";
 
 describe("Test if morse code translates to english correctly", () => {
   test("Translates english words to morse code", () => {
@@ -17,5 +17,11 @@ describe("Test if morse code translates to english correctly", () => {
     expect(convertToMorse("He11o & B3y")).toBe(
       ".... . .---- .---- ---   .-...   -... ...-- -.--"
     );
+  });
+  test("Outputs any symbol not in the code dictionary as it is typed", () => {
+    expect(convertToMorse("///")).toBe("/ / /");
+  });
+  test("Morse converts to english and joins the letters to form a word", () => {
+    expect(convertToEnglish("... --- ...")).toBe("sos");
   });
 });
