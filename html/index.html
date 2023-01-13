@@ -20,6 +20,12 @@
           --&nbsp;---&nbsp;.-.&nbsp;...&nbsp;.&nbsp;-.-.&nbsp;---&nbsp;-..&nbsp;.&nbsp;-&nbsp;.-.&nbsp;.-&nbsp;-.&nbsp;...&nbsp;.-..&nbsp;.-&nbsp;-&nbsp;---&nbsp;.-.
         </h1>
       </header>
+
+      <h3>
+        Please enter either english text or morse code
+        <br />
+        Not both
+      </h3>
       <div class="morse-code">
         <!-- English side -->
         <section id="englishText">
@@ -27,18 +33,21 @@
           <textarea
             class="textBox"
             id="englishTranslation"
-            placeholder="Enter Text"
+            placeholder="Please enter English text"
           ></textarea>
+          <button id="engBtn">Convert to Morse</button>
         </section>
 
         <!-- Morse Code side -->
         <section id="morseText">
           <h2>MORSE CODE</h2>
+
           <textarea
             class="textBox"
             id="morseTranslation"
-            placeholder="Translation"
+            placeholder="Please enter morse code and use a space to separate characters"
           ></textarea>
+          <button id="morseBtn">Convert to English</button>
         </section>
       </div>
     </main>

@@ -36,6 +36,17 @@ section {
   align-items: center;
   flex-direction: column;
 }
+p {
+  margin: 20px;
+  font-size: 20px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+}
 
 .textBox {
   margin: 60px;
@@ -52,5 +63,19 @@ section {
   &::placeholder {
     color: rgba(255, 255, 255, 0.621);
     text-align: center;
+  }
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #312559ca;
+
+  &:hover {
+    background-color: #31255980;
   }
 }
